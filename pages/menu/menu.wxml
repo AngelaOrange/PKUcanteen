@@ -1,0 +1,52 @@
+<view>
+  <view class='topTabSwiper'>
+    <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>早餐</view>
+    <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>午餐</view>
+    <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}'  data-current = "2" bindtap='checkCurrent'>晚餐</view>
+    <view class="top_line"></view>
+  </view>
+  
+<swiper class='swiper' current="{{currentData}}"  style="height:800px;" duration="300" bindchange="bindchange">
+  <swiper-item>
+    <scroll-view  class="list-body" scroll-y="true">
+			  <view class="list-image"wx:for="{{breakfastList}}" wx:key="dish_id">
+            <image class="dish-image" mode="aspectFill"src="../../images/zhou.jpg"></image>
+            <view class="list_item">
+                <view class="dish_name">{{item.dish_name}}</view>
+                <view class="dish_description">{{item.dish_description}}</view>
+                <view class="dish_price">￥{{item.dish_price}}元</view>
+            </view>
+            <view class="border_line"></view>
+        </view>
+    </scroll-view>
+  </swiper-item>
+
+  <swiper-item>
+    <view class="list-body">
+				<view class="list-image"wx:for="{{lunchList}}" wx:key="dish_id">
+        <image class="dish-image" mode="aspectFill"src="../../images/jiding.jpg"></image>
+            <view class="list_item">
+                <view class="dish_name">{{item.dish_name}}</view>
+                <view class="dish_description">{{item.dish_description}}</view>
+                <view class="dish_price">价格：{{item.dish_price}}元</view>
+            </view>
+            <view class="border_line"></view>
+        </view>
+    </view>
+  </swiper-item>
+
+  <swiper-item>
+    <view class="list-body">
+				<view class="list-image"wx:for="{{dinnerList}}" wx:key="dish_id">
+        <image class="dish-image" mode="aspectFill"src="../../images/muxurou.jpg"></image>
+            <view class="list_item">
+                <view class="dish_name">{{item.dish_name}}</view>
+                <view class="dish_description">{{item.dish_description}}</view>
+                <view class="dish_price">价格：{{item.dish_price}}元</view>
+            </view>
+            <view class="border_line"></view>
+        </view>
+    </view>
+  </swiper-item>
+</swiper>
+</view>

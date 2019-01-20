@@ -1,0 +1,58 @@
+<view>
+	<view class='topTabSwiper'>
+    <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>实时</view>
+    <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>一周</view>
+    <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}'  data-current = "2" bindtap='checkCurrent'>总榜</view>
+    <view class="top_line"></view>
+  </view>
+
+      <swiper class='swiper' current="{{currentData}}"  style="height:800px;" duration="300" bindchange="bindchange">
+      <swiper-item>
+        <scroll-view  class="list-body" scroll-y="true">
+				  <view class="list-image"wx:for="{{rankingList}}" wx:key="votes_num">
+            <image class="dish-image" mode="aspectFill"src="../../images/zhou.jpg"></image>
+            <view class="list_item">
+              <view class="dish_name">{{item.dish_name}}</view>
+              <view class="votes_num">{{item.votes_num}}票</view>
+            </view>
+            <view class="border_line"></view>
+          </view>
+        </scroll-view>
+      </swiper-item>
+
+
+    <swiper-item>
+      <scroll-view scroll-y="true">
+        <view class='gaodu'>第二页</view>
+        <view class='gaodu'>第二页</view>
+        <view class='gaodu'>第二页</view>
+        <view class='gaodu'>第二页</view>
+        <view class='gaodu'>第二页</view>
+        <view class='gaodu'>第二页</view>
+        <view class='gaodu'>第二页</view>
+        <view class='gaodu'>第二页</view>
+        <view class='gaodu'>第二页</view>
+        <view class='gaodu'>第二页</view>
+        <view class='gaodu'>第二页</view>
+      </scroll-view>
+    </swiper-item>
+
+
+      <swiper-item>
+        <view  class="list-body">
+				  <view class="list-image"wx:for="{{rankingList}}" wx:key="votes_num">
+            <image class="dish-image" mode="aspectFill"src="../../images/zhou.jpg"></image>
+            <view class="list_item">
+              <view class="dish_name">{{item.dish_name}}</view>
+              <view class="votes_num">{{item.votes_num}}票</view>
+            </view>
+            <view class="border_line"></view>
+          </view>
+        </view>
+      </swiper-item>
+
+      </swiper>
+
+</view>
+
+

@@ -1,0 +1,29 @@
+ <view class="suggest_container">
+          <view class="title_yijian">申请新菜</view>
+
+          <view class="statement_block">
+              <view class="statement">
+                在这里，您可以申请您想吃的任何菜品。 您的每一条新菜品建议，食堂大厨都会仔细查看，认真考虑。
+              </view>  
+          </view>
+
+          <!-- <view class='check_block'>
+            <checkbox-group bindchange="checkboxChange">
+              <label class="checkbox" wx:for="{{items}}">
+                  <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+              </label>
+            </checkbox-group>
+          </view> -->
+  
+
+          <view class="your_name">
+                <input  class="input_name" value="{{dish_name}}" bindchange="inputDishName" placeholder="请输入菜品名称"placeholder-class="placeholder"/>
+          </view>
+
+          <view class="input_description">
+                <input   class="input_yijian"value="{{description}}" bindchange="inputDescription" placeholder="请输入菜品描述"placeholder-class="placeholder"/>
+          </view>
+
+          <view class="submit_btn" bindtap="goSubmit"> 提交</view> 
+
+</view>

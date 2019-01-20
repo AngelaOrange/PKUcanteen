@@ -1,0 +1,57 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/suggest/suggest",
+    "pages/rank/rank",
+    
+    "pages/vote/vote",
+    "pages/menu/menu",
+    "pages/index/index",
+    "pages/logs/logs",
+    
+    "pages/adddish/adddish"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "软微食堂",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "borderStyle": "#000",
+    "selectedColor": "#181818",
+    "list": [
+      {
+        "pagePath": "pages/vote/vote",
+        "iconPath": "images/caidan.png",
+        "selectedIconPath": "images/caidan_selected.png",
+        "text": "菜品投票"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "iconPath": "images/rank.png",
+        "selectedIconPath": "images/rank_selected.png",
+        "text": "排行榜"
+      },
+      {
+        "pagePath": "pages/menu/menu",
+        "iconPath": "images/todaydish.png",
+        "selectedIconPath": "images/todaydish_selected.png",
+        "text": "今日菜单"
+      },
+      {
+        "pagePath": "pages/adddish/adddish",
+        "iconPath": "images/yuyue.png",
+        "selectedIconPath": "images/yuyue_selected.png",
+        "text": "申请新菜"
+      },
+      {
+        "pagePath": "pages/suggest/suggest",
+        "iconPath": "images/yijian.png",
+        "selectedIconPath": "images/yijian_selected.png",
+        "text": "意见反馈"
+      }
+    ]
+  }
+}

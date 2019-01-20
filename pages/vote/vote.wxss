@@ -1,0 +1,130 @@
+.swiper{
+  display: flex;
+  margin-top: 0rpx;
+  height: 100%; 
+  width: 100%; 
+  overflow: hidden;
+  justify-content: center;
+  }
+.topTabSwiper{
+  display: flex;
+  height:80rpx;
+  line-height: 80rpx;
+  width:100%;
+  top:0;
+  text-align:center;
+  position: fixed;
+  background:  #fff;
+  z-index: 20;
+}
+.tab{
+  font-size: 30rpx;
+  display: inline-block;
+  width:33.3%;
+  color:rgb(94, 94, 94);
+  padding-top: 0rpx;
+  padding-bottom: 12rpx;
+}
+.topTabSwiper:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.tabBorer{    
+  color: rgb(37, 37, 37);
+  font-weight: bold;
+  position: relative;
+}
+.tab.tabBorer:after{  
+   content: "";
+   display: block;
+   height: 6rpx;
+   width: 60rpx;
+   background: rgb(255, 180, 20);
+   position: absolute;
+   top:66rpx;
+   left: 45rpx;
+   border-radius: 20rpx;
+  }
+.top_line{
+  display: flex;
+  line-height: 80rpx;
+  width:100%;
+  top:0;
+  text-align:center;
+  position: fixed;
+  background:  #fff;
+  z-index:50;
+  background-color:rgb(218, 218, 218);
+  height: 1rpx;
+  margin-top: 80rpx;
+}
+
+/*-------------------------------------------*/
+.list-body{
+  padding-top:  120rpx;
+}
+.list-image{
+  display: flex;
+  flex-direction:row;
+  justify-content:flex-start;
+}
+.list_item{
+  padding-left: 20rpx;
+  text-align: left;
+  align-items: left;
+  width: 260rpx;
+}
+.dish_name{
+  color: rgb(0,0, 0);
+  font-size: 33rpx;
+  font-weight: bold;
+}
+.dish_description{
+  color: #aaa;
+  font-size: 30rpx;
+  white-space:nowrap;  
+  overflow:hidden; 
+}
+
+.dish_price{
+  padding-top: 30rpx;
+  color: rgb(255, 2, 2);
+  font-size: 32rpx
+}
+.border_line{
+  background-color:rgb(41, 40, 40);
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  height: 2rpx;
+}
+
+.dish-image{
+  padding-left:40rpx;
+  padding-bottom: 30rpx;
+  width:250rpx;
+  height:180rpx;
+}
+.vote_btn{
+  background-color:rgb(255, 200,0);
+  text-align: center;
+  margin-top:50rpx;
+  /* margin-left: 250rpx; */
+  color: rgb(255, 255, 255);
+  width: 100rpx;
+  height: 60rpx;
+  font-size: 35rpx;
+  display: flex;
+  justify-content: center;
+  border-radius: 5rpx;
+  margin-left: 30rpx;
+}
+
+.border_line{
+  background-color:white;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  height: 5rpx;
+}

@@ -1,0 +1,28 @@
+ <view class="suggest_container">
+          <view class="title_yijian">意见/投诉</view>
+
+          <view class="statement_block">
+              <view class="statement">
+                在这里，您可以提意见或投诉。您的每一条新建议，工作人员都会仔细查看，认真考虑。
+              </view>  
+          </view>
+
+          <view class='check_block'>
+            <checkbox-group bindchange="checkboxChange">
+              <label class="checkbox" wx:for="{{items}}">
+                  <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+              </label>
+            </checkbox-group>
+          </view>
+  
+          <view class="your_name">
+                <input  class="input_name" value="{{dish_name}}" bindchange="inputDishName" placeholder="如果你愿意，请留下你的姓名"placeholder-class="placeholder"/>
+          </view>
+
+          <view class="input_description">
+                <input   class="input_yijian"value="{{description}}" bindchange="inputDescription" placeholder="请输入您的意见或投诉"placeholder-class="placeholder"/>
+          </view>
+
+          <view class="submit_btn" bindtap="goSubmit"> 提交</view> 
+
+</view>
